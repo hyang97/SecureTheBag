@@ -1,20 +1,34 @@
-import React from 'react';
+import React from "react";
+import styled from "react-emotion";
 
-class Input extends React.Component{
-	constructor(props){
-		super(props);
-		this.state = {
-			
-		};
-	}
+const InputContainer = styled("div")`
+  font-size: 1.25rem;
+  position: relative;
+  padding: 3px;
+  border: 1px solid black;
+  border-radius: 2px;
+  transform-origin: left;
+  display: block;
+  margin: 8px;
+`;
 
-	render(){
-		return (
-			<div>
-				<input type='submit' value={this.props.value} ></input>
-			</div>
-		);
-	}
+const InputBox = styled("input")`
+  font-size: 1rem;
+`;
+
+class Input extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+
+  render() {
+    return (
+      <InputContainer>
+        <InputBox type="input" placeholder={this.props.value} />
+      </InputContainer>
+    );
+  }
 }
 
 export default Input;
