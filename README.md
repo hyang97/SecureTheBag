@@ -1,6 +1,6 @@
-# agorafrontend
+# bag
 
-creative labs
+BoFA CS 188
 
 ## setup
 
